@@ -1,0 +1,37 @@
+[
+  {
+    "id": "Ds8RyOvaLHeymIFrzCKm",
+    "createdBy": "Nuwaisir Hoque Rhythm",
+    "category": "update",
+    "createdAt": {
+      "type": "firestore/timestamp/1.0",
+      "seconds": 1788627694,
+      "nanoseconds": 220000000
+    },
+    "important": true,
+    "content": "তোমরা যারা মেডিকেল স্ট্যান্ডার্ড এক্সাম ব্যাচ ২০২৬ এ জয়েন করেছো তারা সবাই নিচের লিংক গুলিতে জয়েন করো \n\nhttps://facebook.com/groups/1971205073825594/\n\nhttps://t.me/MATguidelineRhythm",
+    "title": "মেডিকেল স্ট্যান্ডার্ড এক্সাম ব্যাচ আপডেট "
+  },
+  {
+    "id": "MnQkBDdtJkQ65NGCv3T4",
+    "important": true,
+    "title": "HSC Exam",
+    "category": "news",
+    "createdAt": {
+      "type": "firestore/timestamp/1.0",
+      "seconds": 1782970430,
+      "nanoseconds": 1000000
+    },
+    "content": "শুরু হলো এইচএসসি ২০২৬",
+    "createdBy": "Nuwaisir Hoque Rhythm"
+  },
+  {
+    "id": "nRgzveNUHiTwxxH9lBpN",
+    "content": "A brand-new Live Exam Batch Model Test \"Medical Standard Exam Batch 2026\" (Biology • 20 Questions • 60 Mins) is now LIVE! Jump into Practice Arena to participate and compete on the live leaderboard!",
+    "createdAt": "2026-08-08T17:32:36.335Z",
+    "title": "🚀 LIVE EXAM BATCH LAUNCHED: Medical Standard Exam Batch 2026",
+    "createdBy": "Nuwaisir Hoque Rhythm",
+    "important": true,
+    "category": "announcement"
+  }
+]

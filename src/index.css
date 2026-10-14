@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@400;550;700;800&family=JetBrains+Mono:wght@300;400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Space Grotesk", sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+html, body {
+  overflow-x: hidden;
+  max-width: 100vw;
+  scroll-behavior: smooth;
+}
+
+/* Custom 3D Card Flip CSS utilities */
+.perspective-1000 {
+  perspective: 1000px;
+}
+.transform-style-3d {
+  transform-style: preserve-3d;
+}
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+.rotate-y-180 {
+  transform: rotateY(180deg);
+}
+
+/* Custom Background Music Animations */
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+.animate-marquee {
+  animation: marquee 12s linear infinite;
+  display: inline-block;
+  padding-left: 100%;
+}
+
+@keyframes spin-slow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
+
+.animate-spin-slow {
+  animation: spin-slow 15s linear infinite;
+}
+
+@keyframes eq-bar-1 {
+  0%, 100% { height: 4px; }
+  50% { height: 12px; }
+}
+@keyframes eq-bar-2 {
+  0%, 100% { height: 6px; }
+  50% { height: 16px; }
+}
+@keyframes eq-bar-3 {
+  0%, 100% { height: 3px; }
+  50% { height: 14px; }
+}
+
+.animate-eq-bar-1 {
+  animation: eq-bar-1 0.6s ease-in-out infinite alternate;
+}
+.animate-eq-bar-2 {
+  animation: eq-bar-2 0.8s ease-in-out infinite alternate;
+}
+.animate-eq-bar-3 {
+  animation: eq-bar-3 0.7s ease-in-out infinite alternate;
+}
+
+/* Custom Premium Bluish-Black Theme Overrides */
+html,
+html.dark,
+html.dark body,
+html.dark #root,
+html.dark #landing-page-root {
+  background-color: #070c16 !important; /* Extremely rich deep bluish-black background */
+  color: #e2e8f0 !important;
+}
+
+/* Custom Background Gradients & Accents */
+html.dark .bg-\[\#0A0A0A\],
+html.dark .bg-\[\#040404\],
+html.dark .bg-\[\#111111\],
+html.dark .bg-black,
+html.dark .bg-slate-950,
+html.dark .bg-neutral-950,
+html.dark .bg-gray-950 {
+  background-color: #070c16 !important;
+}
+
+/* Slightly lighter surface for cards, headers, sidebars */
+html.dark .bg-\[\#0D0D0D\],
+html.dark .bg-\[\#121212\],
+html.dark .bg-\[\#151515\],
+html.dark .bg-\[\#161616\],
+html.dark .bg-\[\#181818\],
+html.dark .bg-\[\#1c1c1c\],
+html.dark .bg-\[\#1d1d1d\],
+html.dark .bg-\[\#1e1e1e\],
+html.dark .bg-\[\#1f1f1f\],
+html.dark .bg-slate-900,
+html.dark .bg-gray-900,
+html.dark .bg-zinc-900,
+html.dark .bg-neutral-900,
+html.dark .bg-stone-900 {
+  background-color: #0f182a !important; /* Premium rich navy-dark card surface */
+}
+
+/* Extra highlight/hover backgrounds for list items, active buttons */
+html.dark .bg-\[\#1c1c1c\]:hover,
+html.dark .bg-\[\#181818\]:hover,
+html.dark .bg-slate-800,
+html.dark .bg-slate-900\/80,
+html.dark .bg-gray-800 {
+  background-color: #17243c !important; /* Sleek hover highlight */
+}
+
+/* Border overrides to use a sleek semi-transparent indigo-slate color for premium feel */
+html.dark .border-white\/5,
+html.dark .border-white\/10,
+html.dark .border-gray-800,
+html.dark .border-neutral-800,
+html.dark .border-slate-800,
+html.dark .border-zinc-800 {
+  border-color: rgba(99, 102, 241, 0.15) !important; /* Translucent indigo glow */
+}
+
+html.dark .border-white\/20,
+html.dark .border-gray-700,
+html.dark .border-neutral-700 {
+  border-color: rgba(99, 102, 241, 0.25) !important;
+}
+
+/* Input boxes, panels, text areas */
+html.dark input,
+html.dark textarea,
+html.dark select {
+  background-color: #090f1d !important;
+  border-color: rgba(99, 102, 241, 0.2) !important;
+  color: #f8fafc !important;
+}
+
+html.dark input:focus,
+html.dark textarea:focus,
+html.dark select:focus {
+  border-color: rgba(99, 102, 241, 0.5) !important;
+  outline: none !important;
+  box-shadow: 0 0 10px rgba(99, 102, 241, 0.2) !important;
+}
+
+/* Scrollbar utilities to prevent visual glitching / ugly layout overflow */
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-none {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+  background: transparent;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 9999px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: rgba(255, 255, 255, 0.2);
+}
+
+
+

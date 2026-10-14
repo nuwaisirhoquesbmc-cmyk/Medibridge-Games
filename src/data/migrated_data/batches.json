@@ -1,0 +1,76 @@
+[
+  {
+    "id": "batch_2026_rev",
+    "batchSlug": "revision-2026",
+    "batchName": "Final Revision Batch 2026",
+    "totalStudents": 2150,
+    "price": 4990,
+    "accessUntil": "2027-01-31",
+    "startDate": "2026-08-15",
+    "createdAt": "2026-02-15T00:00:00Z",
+    "discountedPrice": 4990,
+    "courseId": "course_med_2026",
+    "scheduleDetails": "প্রতিদিন রাত ৯:০০ টা",
+    "originalPrice": 8000,
+    "teacherIds": [
+      "teacher_tanjim"
+    ],
+    "endDate": "2026-12-31"
+  },
+  {
+    "id": "batch_2027_alpha",
+    "updatedAt": "2026-09-05T17:06:43.708Z",
+    "courseId": "course_med_2027",
+    "totalStudents": 1420,
+    "batchName": "Medical Standard Exam Batch 2026",
+    "batchSlug": "medical-standard-exam-batch-2027",
+    "discountedPrice": 599,
+    "endDate": "2027-06-30",
+    "scheduleDetails": "রুটিন অনুযায়ী ",
+    "price": 599,
+    "createdAt": "2026-01-10T00:00:00Z",
+    "accessUntil": "2027-07-31",
+    "startDate": "2026-09-01",
+    "originalPrice": 999,
+    "teacherIds": [
+      "teacher_shahriar",
+      "teacher_tanjim"
+    ]
+  },
+  {
+    "id": "batch_2027_beta",
+    "price": 8500,
+    "startDate": "2026-10-01",
+    "createdAt": "2026-02-01T00:00:00Z",
+    "originalPrice": 12500,
+    "teacherIds": [
+      "teacher_shahriar"
+    ],
+    "courseId": "course_med_2027",
+    "batchSlug": "beta-2027",
+    "scheduleDetails": "সোম, বুধ, শুক্র সন্ধ্যা ৭:৩০ টা",
+    "accessUntil": "2027-08-15",
+    "discountedPrice": 8500,
+    "batchName": "Medical Beta Batch 2027",
+    "totalStudents": 890,
+    "endDate": "2027-07-15"
+  },
+  {
+    "id": "batch_bio_master",
+    "accessUntil": "2027-02-28",
+    "teacherIds": [
+      "teacher_sazzad"
+    ],
+    "price": 0,
+    "originalPrice": 0,
+    "courseId": "course_bio_mastery",
+    "createdAt": "2026-03-01T00:00:00Z",
+    "startDate": "2026-08-20",
+    "scheduleDetails": "শনিবার ও বুধবার রাত ৮:৩০ টা",
+    "discountedPrice": 0,
+    "endDate": "2026-11-20",
+    "totalStudents": 670,
+    "batchName": "Biology Champion Batch 01",
+    "batchSlug": "bio-champion-01"
+  }
+]

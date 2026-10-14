@@ -1,0 +1,6 @@
+{
+  "name": "MediBridge Games",
+  "description": "Bangladesh's First Gamified Medical Admission Preparation Ecosystem. Train Like a Gamer. Think Like a Medicalian.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

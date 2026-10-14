@@ -1,0 +1,221 @@
+[
+  {
+    "id": "8WxyK1dqD4E1rMltce2P",
+    "userId": "l8VtmqjiOfWT88Tcl8mPtIUUz4A2",
+    "userAvatar": "https://api.dicebear.com/7.x/pixel-art/svg?seed=l8VtmqjiOfWT88Tcl8mPtIUUz4A2",
+    "content": "🏆 NEW STUDY GUILD INAUGURATED! **Mohammad Abu Kauser** has commissioned a new Study Squad **\"aaa\"**! Slogan: *\"Per Aspera Ad Astra!\"*. Join them now to conquer the national rankings!",
+    "streakCount": 1,
+    "fires": 1,
+    "claps": 2,
+    "achievementType": "New Guild",
+    "likedBy": [
+      "l8VtmqjiOfWT88Tcl8mPtIUUz4A2",
+      "ne5bpQw1UpY2bZFMO07K4nhjI2d2"
+    ],
+    "clappedBy": [],
+    "createdAt": {
+      "type": "firestore/timestamp/1.0",
+      "seconds": 1783788928,
+      "nanoseconds": 379000000
+    },
+    "userRank": "Freshman",
+    "likes": 3,
+    "firedBy": [],
+    "userDisplayName": "Mohammad Abu Kauser"
+  },
+  {
+    "id": "AKQ80PSNZIDpPFXHHq44",
+    "firedBy": [],
+    "fires": 2,
+    "claps": 1,
+    "userAvatar": "https://api.dicebear.com/7.x/avataaars/svg?seed=fuZ2bJ6koVNOdIqCmuaI6k8dqxp2",
+    "streakCount": 1,
+    "clappedBy": [],
+    "createdAt": {
+      "type": "firestore/timestamp/1.0",
+      "seconds": 1791794629,
+      "nanoseconds": 10000000
+    },
+    "likedBy": [
+      "fuZ2bJ6koVNOdIqCmuaI6k8dqxp2"
+    ],
+    "likes": 1,
+    "userDisplayName": "Arefa Khanom",
+    "content": "🔥 streak master active! I'm keeping my 1-day medical prep daily study lock active on MediBridge Games! Can you defeat my high score?",
+    "userRank": "Freshman",
+    "userId": "fuZ2bJ6koVNOdIqCmuaI6k8dqxp2",
+    "achievementType": "Streak King"
+  },
+  {
+    "id": "QgXurH69YGZrfy72RT8G",
+    "content": "🔥 streak master active! I'm keeping my 3-day medical prep daily study lock active on MediBridge Games! Can you defeat my high score?",
+    "streakCount": 3,
+    "fires": 2,
+    "clappedBy": [],
+    "createdAt": {
+      "type": "firestore/timestamp/1.0",
+      "seconds": 1789480857,
+      "nanoseconds": 742000000
+    },
+    "claps": 1,
+    "userRank": "Freshman",
+    "likes": 2,
+    "achievementType": "Streak King",
+    "userId": "o0nzEfksWXTt4aezZTGw2qHmR963",
+    "firedBy": [],
+    "userAvatar": "https://lh3.googleusercontent.com/a/ACg8ocKceoLwyEf1xFvZvekLfvH6sMw4inTBt-pH0f9JGTP-R0DVDQ=s96-c",
+    "likedBy": [
+      "o0nzEfksWXTt4aezZTGw2qHmR963",
+      "ne5bpQw1UpY2bZFMO07K4nhjI2d2"
+    ],
+    "userDisplayName": "Nuri Ikbal"
+  },
+  {
+    "id": "hGnYgySBuPwWPq1kWCPO",
+    "clappedBy": [
+      "ne5bpQw1UpY2bZFMO07K4nhjI2d2"
+    ],
+    "createdAt": {
+      "type": "firestore/timestamp/1.0",
+      "seconds": 1783788905,
+      "nanoseconds": 891000000
+    },
+    "userAvatar": "https://api.dicebear.com/7.x/pixel-art/svg?seed=l8VtmqjiOfWT88Tcl8mPtIUUz4A2",
+    "likedBy": [],
+    "firedBy": [],
+    "fires": 0,
+    "claps": 1,
+    "userRank": "Freshman",
+    "userId": "l8VtmqjiOfWT88Tcl8mPtIUUz4A2",
+    "content": "mara kha",
+    "likes": 0,
+    "userDisplayName": "Mohammad Abu Kauser"
+  },
+  {
+    "id": "jTaWeVu8Fql5JntjfCU2",
+    "userAvatar": "https://api.dicebear.com/7.x/pixel-art/svg?seed=Neuro Slasher",
+    "createdAt": {
+      "type": "firestore/timestamp/1.0",
+      "seconds": 1781598867,
+      "nanoseconds": 222000000
+    },
+    "clappedBy": [
+      "ne5bpQw1UpY2bZFMO07K4nhjI2d2"
+    ],
+    "content": "🔥 streak master active! I'm keeping my 3-day medical prep daily study lock active on MediBridge Games! Can you defeat my high score?",
+    "fires": 3,
+    "streakCount": 3,
+    "claps": 2,
+    "firedBy": [
+      "ne5bpQw1UpY2bZFMO07K4nhjI2d2"
+    ],
+    "userDisplayName": "Nuwaisir Hoque Rhythm",
+    "userRank": "Freshman",
+    "userId": "ne5bpQw1UpY2bZFMO07K4nhjI2d2",
+    "likes": 1,
+    "likedBy": [
+      "ne5bpQw1UpY2bZFMO07K4nhjI2d2"
+    ],
+    "achievementType": "Streak King"
+  },
+  {
+    "id": "oAF9ZZWoD0vVMxzijbBt",
+    "likes": 1,
+    "doubtSolved": true,
+    "userId": "ne5bpQw1UpY2bZFMO07K4nhjI2d2",
+    "userAvatar": "https://api.dicebear.com/7.x/pixel-art/svg?seed=Neuro Slasher",
+    "content": "⚔️ RECRUIT ALLIANCE! **Nuwaisir Hoque Rhythm** has joined the ranks of Study Squad **\"aaa\"**! Team XP grew by **+250**!",
+    "streakCount": 1,
+    "achievementType": "Squad Join",
+    "fires": 1,
+    "claps": 1,
+    "likedBy": [
+      "ne5bpQw1UpY2bZFMO07K4nhjI2d2"
+    ],
+    "userRank": "Elite",
+    "firedBy": [],
+    "createdAt": {
+      "type": "firestore/timestamp/1.0",
+      "seconds": 1784065337,
+      "nanoseconds": 878000000
+    },
+    "clappedBy": [],
+    "userDisplayName": "Nuwaisir Hoque Rhythm"
+  },
+  {
+    "id": "tDGyuFlJqSScLndgplCl",
+    "userRank": "Freshman",
+    "userId": "Q7gvjRflsSZa3nbM1erRES8p6pl2",
+    "content": "🔥 streak master active! I'm keeping my 3-day medical prep daily study lock active on MediBridge Games! Can you defeat my high score?",
+    "clappedBy": [],
+    "createdAt": {
+      "type": "firestore/timestamp/1.0",
+      "seconds": 1791915416,
+      "nanoseconds": 301000000
+    },
+    "likes": 1,
+    "likedBy": [
+      "Q7gvjRflsSZa3nbM1erRES8p6pl2"
+    ],
+    "achievementType": "Streak King",
+    "streakCount": 3,
+    "fires": 2,
+    "userAvatar": "https://lh3.googleusercontent.com/a/ACg8ocIeWvkj_uK8lQv1v92WMgC_078WvB3c81LlJeH7Q1LYQx8YTJYp=s96-c",
+    "claps": 1,
+    "firedBy": [],
+    "userDisplayName": "Tasnuva Alam Dighi"
+  },
+  {
+    "id": "tLo188eReZB4PkEZY0St",
+    "content": "🔥 streak master active! I'm keeping my 3-day medical prep daily study lock active on MediBridge Games! Can you defeat my high score?",
+    "achievementType": "Streak King",
+    "likes": 1,
+    "userDisplayName": "Nuwaisir Hoque Rhythm",
+    "streakCount": 3,
+    "userAvatar": "https://api.dicebear.com/7.x/pixel-art/svg?seed=Neuro Slasher",
+    "firedBy": [
+      "ne5bpQw1UpY2bZFMO07K4nhjI2d2"
+    ],
+    "userId": "ne5bpQw1UpY2bZFMO07K4nhjI2d2",
+    "fires": 3,
+    "likedBy": [
+      "ne5bpQw1UpY2bZFMO07K4nhjI2d2"
+    ],
+    "clappedBy": [
+      "ne5bpQw1UpY2bZFMO07K4nhjI2d2"
+    ],
+    "createdAt": {
+      "type": "firestore/timestamp/1.0",
+      "seconds": 1781598871,
+      "nanoseconds": 339000000
+    },
+    "claps": 2,
+    "userRank": "Freshman"
+  },
+  {
+    "id": "yzvDpj9PF7JqYw6lu5rv",
+    "doubtSolved": false,
+    "likes": 0,
+    "isDoubt": false,
+    "userId": "ne5bpQw1UpY2bZFMO07K4nhjI2d2",
+    "doubtSubject": "",
+    "content": "Bigggg ussss",
+    "fires": 1,
+    "claps": 0,
+    "likedBy": [],
+    "firedBy": [
+      "ne5bpQw1UpY2bZFMO07K4nhjI2d2"
+    ],
+    "userRank": "Elite",
+    "doubtChapter": "",
+    "doubtImageUrl": "",
+    "userAvatar": "https://api.dicebear.com/7.x/pixel-art/svg?seed=Neuro Slasher",
+    "userDisplayName": "Nuwaisir Hoque Rhythm",
+    "clappedBy": [],
+    "createdAt": {
+      "type": "firestore/timestamp/1.0",
+      "seconds": 1784045408,
+      "nanoseconds": 38000000
+    }
+  }
+]

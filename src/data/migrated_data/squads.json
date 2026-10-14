@@ -1,0 +1,31 @@
+[
+  {
+    "id": "u2Mv6LsH9Xdz9eK0Whlk",
+    "name": "aaa",
+    "memberCount": 2,
+    "members": [
+      "l8VtmqjiOfWT88Tcl8mPtIUUz4A2",
+      "ne5bpQw1UpY2bZFMO07K4nhjI2d2"
+    ],
+    "memberContributions": {
+      "ne5bpQw1UpY2bZFMO07K4nhjI2d2": 50,
+      "l8VtmqjiOfWT88Tcl8mPtIUUz4A2": 100
+    },
+    "motto": "Per Aspera Ad Astra!",
+    "teamXp": 400,
+    "level": 1,
+    "logoUrl": "emblem:stethoscope",
+    "creatorId": "l8VtmqjiOfWT88Tcl8mPtIUUz4A2",
+    "challengeProgress": {
+      "biology_mastery": 0,
+      "physics_vectors": 0,
+      "chemistry_fusion": 0
+    },
+    "createdAt": {
+      "type": "firestore/timestamp/1.0",
+      "seconds": 1783788928,
+      "nanoseconds": 98000000
+    },
+    "description": "ddd"
+  }
+]
