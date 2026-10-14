@@ -1,6 +1,7 @@
 import express from "express";
 import path from "path";
 import fs from "fs";
+import http from "http";
 import { createServer as createViteServer } from "vite";
 import { GoogleGenAI, Type } from "@google/genai";
 import dotenv from "dotenv";
@@ -612,9 +613,17 @@ Keep the prose crisp, engaging, and in premium gaming dashboard style. Use markd
   });
 
   // Serve static files in production / Vite middleware in dev
+  const httpServer = http.createServer(app);
+
   if (process.env.NODE_ENV !== "production") {
+    const hmrDisabled = process.env.DISABLE_HMR === "true";
+    // Share the Express HTTP server for the HMR WebSocket so it works behind
+    // proxies that only expose the app port (Vite's default is a separate port 24678).
     const vite = await createViteServer({
-      server: { middlewareMode: true },
+      server: {
+        middlewareMode: true,
+        hmr: hmrDisabled ? false : { server: httpServer },
+      },
       appType: "spa",
     });
     app.use(vite.middlewares);
@@ -626,7 +635,7 @@ Keep the prose crisp, engaging, and in premium gaming dashboard style. Use markd
     });
   }
 
-  app.listen(PORT, "0.0.0.0", () => {
+  httpServer.listen(PORT, "0.0.0.0", () => {
     console.log(`Server running on port ${PORT}`);
   });
 }
