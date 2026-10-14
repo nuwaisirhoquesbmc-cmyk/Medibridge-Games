@@ -22,7 +22,7 @@ import {
   Check
 } from "lucide-react";
 import { Question, UserProfile } from "../types";
-import { getIncorrectQuestions, logQuestionMistake, removeQuestionMistake } from "../firebase";
+import { getIncorrectQuestions, logQuestionMistake, removeQuestionMistake } from "../lib/backend";
 import { playSound } from "../audio";
 
 interface ReviewMistakesPanelProps {

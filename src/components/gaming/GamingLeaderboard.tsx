@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Trophy, Flame, Search, Loader2 } from "lucide-react";
-import { collection, query, orderBy, limit, getDocs } from "firebase/firestore";
-import { db, isFirestoreQuotaExceeded, setFirestoreQuotaExhausted, isQuotaExceededError } from "../../firebase";
+import { collection, query, orderBy, limit, getDocs } from "../../lib/supabaseDb";
+import { db, isFirestoreQuotaExceeded, setFirestoreQuotaExhausted, isQuotaExceededError } from "../../lib/backend";
 
 interface GamingLeaderboardProps {
   courseId: string;

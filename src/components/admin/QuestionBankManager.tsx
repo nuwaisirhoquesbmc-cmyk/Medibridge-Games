@@ -9,7 +9,7 @@ import {
   QuestionBankStats
 } from "../../types/questionBankTypes";
 import { Course } from "../../types/courseTypes";
-import { db } from "../../firebase";
+import { db } from "../../lib/backend";
 import {
   collection,
   getDocs,
@@ -18,7 +18,7 @@ import {
   deleteDoc,
   doc,
   writeBatch
-} from "firebase/firestore";
+} from "../../lib/supabaseDb";
 import {
   normalizeToBankQuestion,
   computeQuestionBankStats,

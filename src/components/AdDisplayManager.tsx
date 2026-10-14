@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { db } from "../firebase";
+import { db } from "../lib/backend";
 import {
   collection,
   query,
@@ -11,7 +11,7 @@ import {
   updateDoc,
   increment,
   addDoc,
-} from "firebase/firestore";
+} from "../lib/supabaseDb";
 import { Advertisement, UserProfile } from "../types";
 import { playSound } from "../audio";
 import { X, ExternalLink, Sparkles } from "lucide-react";

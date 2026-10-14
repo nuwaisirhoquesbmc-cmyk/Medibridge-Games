@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { db, handleFirestoreError, OperationType } from "../../firebase";
+import { db, handleFirestoreError, OperationType } from "../../lib/backend";
 import {
   collection,
   query,
@@ -10,7 +10,7 @@ import {
   doc,
   serverTimestamp,
   limit,
-} from "firebase/firestore";
+} from "../../lib/supabaseDb";
 import { Question } from "../../types";
 import { MEDICAL_GAMES } from "../gaming/gamingData";
 import {

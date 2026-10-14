@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
 import { UserProfile } from "../types";
 import { CheckCircle2, Circle, Coins, Flame, Gem, ShieldAlert, Sparkles, Swords, BrainCircuit, Play } from "lucide-react";
-import { doc, setDoc } from "firebase/firestore";
-import { db } from "../firebase";
+import { doc, setDoc } from "../lib/supabaseDb";
+import { db } from "../lib/backend";
 
 interface DailyMissionsProps {
   user: UserProfile;

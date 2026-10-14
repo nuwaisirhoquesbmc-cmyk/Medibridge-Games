@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { UserProfile } from "../types";
-import { collection, query, where, orderBy, limit, onSnapshot, addDoc } from "firebase/firestore";
-import { db } from "../firebase";
+import { collection, query, where, orderBy, limit, onSnapshot, addDoc } from "../lib/supabaseDb";
+import { db } from "../lib/backend";
 import {
   Bot,
   Sparkles,

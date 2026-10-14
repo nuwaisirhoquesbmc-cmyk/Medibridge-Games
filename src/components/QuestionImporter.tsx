@@ -1,7 +1,7 @@
 import React, { useState, useRef } from "react";
 import * as XLSX from "xlsx";
-import { db } from "../firebase";
-import { collection, writeBatch, doc } from "firebase/firestore";
+import { db } from "../lib/backend";
+import { collection, writeBatch, doc } from "../lib/supabaseDb";
 import { Question, UserProfile, SubjectType, DifficultyType } from "../types";
 import { 
   FileSpreadsheet, 

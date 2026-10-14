@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useMemo } from "react";
 import { saveVideoToIndexedDB, getVideoFromIndexedDB } from "../lib/videoDb";
 import { saveMusicToIndexedDB, getMusicFromIndexedDB } from "../lib/musicDb";
-import { db, handleFirestoreError, OperationType, isFirestoreQuotaExceeded, setFirestoreQuotaExhausted, isQuotaExceededError } from "../firebase";
+import { db, handleFirestoreError, OperationType, isFirestoreQuotaExceeded, setFirestoreQuotaExhausted, isQuotaExceededError } from "../lib/backend";
 import {
   collection,
   onSnapshot,
@@ -16,7 +16,7 @@ import {
   serverTimestamp,
   updateDoc,
   writeBatch
-} from "firebase/firestore";
+} from "../lib/supabaseDb";
 import { UserProfile, Question, AdminNotice } from "../types";
 import { STARTER_QUESTIONS } from "../questionsData";
 import {

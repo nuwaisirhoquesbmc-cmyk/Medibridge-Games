@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { doc, getDoc } from "firebase/firestore";
-import { db } from "../firebase";
+import { doc, getDoc } from "../lib/supabaseDb";
+import { db } from "../lib/backend";
 import { motion } from "motion/react";
 
 interface MediBridgeLogoProps {

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { db } from "../../firebase";
+import { db } from "../../lib/backend";
 import {
   collection,
   doc,
@@ -12,7 +12,7 @@ import {
   query,
   orderBy,
   limit
-} from "firebase/firestore";
+} from "../../lib/supabaseDb";
 import { OurHero, INITIAL_HEROES } from "../../types/heroTypes";
 import { playSound } from "../../audio";
 import {

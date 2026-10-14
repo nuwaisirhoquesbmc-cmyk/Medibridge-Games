@@ -15,8 +15,8 @@ import {
   Book
 } from "lucide-react";
 import { playSound } from "../audio";
-import { db } from "../firebase";
-import { collection, getDocs, query as firestoreQuery, limit } from "firebase/firestore";
+import { db } from "../lib/backend";
+import { collection, getDocs, query as firestoreQuery, limit } from "../lib/supabaseDb";
 import { STARTER_QUESTIONS } from "../questionsData";
 import { 
   TIMELINE_DATA, 

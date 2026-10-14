@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useMemo } from "react";
-import { db, handleFirestoreError, OperationType, logQuestionMistake, removeQuestionMistake, isFirestoreQuotaExceeded } from "../firebase";
-import { doc, setDoc, collection, onSnapshot, addDoc, query, orderBy, where, limit } from "firebase/firestore";
+import { db, handleFirestoreError, OperationType, logQuestionMistake, removeQuestionMistake, isFirestoreQuotaExceeded } from "../lib/backend";
+import { doc, setDoc, collection, onSnapshot, addDoc, query, orderBy, where, limit } from "../lib/supabaseDb";
 import { Question, UserProfile, SubjectType, DifficultyType } from "../types";
 import { STARTER_QUESTIONS } from "../questionsData";
 import { playSound } from "../audio";

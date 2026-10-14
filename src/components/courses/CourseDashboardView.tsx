@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef, useMemo } from "react";
-import { db } from "../../firebase";
-import { doc, setDoc, collection, query, where, onSnapshot, updateDoc } from "firebase/firestore";
+import { db } from "../../lib/backend";
+import { doc, setDoc, collection, query, where, onSnapshot, updateDoc } from "../../lib/supabaseDb";
 import {
   Course,
   Batch,

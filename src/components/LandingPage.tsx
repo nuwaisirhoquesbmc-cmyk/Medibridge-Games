@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { db } from "../firebase";
-import { doc, collection, getDoc, getDocs, query, orderBy, limit } from "firebase/firestore";
+import { db } from "../lib/backend";
+import { doc, collection, getDoc, getDocs, query, orderBy, limit } from "../lib/supabaseDb";
 import { getVideoFromIndexedDB } from "../lib/videoDb";
 import { INITIAL_COURSES } from "../data/coursesData";
 import { Course, CourseDemoClass } from "../types/courseTypes";

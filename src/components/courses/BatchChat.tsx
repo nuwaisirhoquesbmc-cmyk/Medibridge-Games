@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Course, Batch, BatchChatMessage } from "../../types/courseTypes";
 import { UserProfile } from "../../types";
-import { db } from "../../firebase";
+import { db } from "../../lib/backend";
 import { NotificationService } from "../../lib/notificationService";
 import {
   collection,
@@ -15,7 +15,7 @@ import {
   limit,
   arrayUnion,
   arrayRemove
-} from "firebase/firestore";
+} from "../../lib/supabaseDb";
 import { motion, AnimatePresence } from "motion/react";
 import {
   MessageSquare,

@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Course, CourseTeacher } from "../../types/courseTypes";
-import { db } from "../../firebase";
-import { collection, onSnapshot, doc, query, limit } from "firebase/firestore";
+import { db } from "../../lib/backend";
+import { collection, onSnapshot, doc, query, limit } from "../../lib/supabaseDb";
 import { motion, AnimatePresence } from "motion/react";
 import {
   ShieldCheck,

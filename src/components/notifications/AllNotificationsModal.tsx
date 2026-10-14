@@ -1,12 +1,12 @@
 import React, { useState, useMemo, useEffect } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { db } from "../../firebase";
+import { db } from "../../lib/backend";
 import {
   doc,
   updateDoc,
   deleteDoc,
   writeBatch
-} from "firebase/firestore";
+} from "../../lib/supabaseDb";
 import { playSound } from "../../audio";
 import { NotificationService } from "../../lib/notificationService";
 import {

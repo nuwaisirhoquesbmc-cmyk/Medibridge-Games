@@ -2,8 +2,8 @@ import React, { useState, useEffect } from "react";
 import { Course, Batch, Enrollment, CourseDemoClass } from "../../types/courseTypes";
 import { UserProfile } from "../../types";
 import { getCourseAspectClass } from "../../lib/courseUtils";
-import { db } from "../../firebase";
-import { doc, getDoc } from "firebase/firestore";
+import { db } from "../../lib/backend";
+import { doc, getDoc } from "../../lib/supabaseDb";
 import { motion, AnimatePresence } from "motion/react";
 import {
   Search,

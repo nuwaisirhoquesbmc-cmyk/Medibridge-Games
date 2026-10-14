@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { db } from "../firebase";
+import { db } from "../lib/backend";
 import { 
   collection, 
   addDoc, 
@@ -12,7 +12,7 @@ import {
   doc,
   getDoc,
   setDoc
-} from "firebase/firestore";
+} from "../lib/supabaseDb";
 import { UserProfile, PaymentRequest } from "../types";
 import { motion, AnimatePresence } from "motion/react";
 import { 

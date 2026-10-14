@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { db, handleFirestoreError, OperationType } from "../firebase";
+import { db, handleFirestoreError, OperationType } from "../lib/backend";
 import {
   collection,
   onSnapshot,
@@ -15,7 +15,7 @@ import {
   getDocs,
   where,
   arrayUnion,
-} from "firebase/firestore";
+} from "../lib/supabaseDb";
 import { UserProfile, Question, AdminNotice } from "../types";
 import { STARTER_QUESTIONS } from "../questionsData";
 import QuestionImporter from "./QuestionImporter";

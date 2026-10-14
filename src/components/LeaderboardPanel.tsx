@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback } from "react";
-import { db, handleFirestoreError, OperationType } from "../firebase";
-import { collection, query, orderBy, limit, getDocs } from "firebase/firestore";
+import { db, handleFirestoreError, OperationType } from "../lib/backend";
+import { collection, query, orderBy, limit, getDocs } from "../lib/supabaseDb";
 import { UserProfile, COLLEGES, DISTRICTS } from "../types";
 import { Trophy, ShieldAlert, Award, Grid, Star, Map as MapIcon, GraduationCap, Pin, Swords, RefreshCw } from "lucide-react";
 

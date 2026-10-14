@@ -3,8 +3,8 @@ import { Course, Enrollment, Order } from "../../types/courseTypes";
 import { UserProfile } from "../../types";
 import { getCourseAspectClass } from "../../lib/courseUtils";
 import PaymentReceipt from "./PaymentReceipt";
-import { db } from "../../firebase";
-import { collection, query, where, limit, onSnapshot } from "firebase/firestore";
+import { db } from "../../lib/backend";
+import { collection, query, where, limit, onSnapshot } from "../../lib/supabaseDb";
 import { motion } from "motion/react";
 import {
   BookOpen,

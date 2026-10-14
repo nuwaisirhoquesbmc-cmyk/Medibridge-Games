@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { db, isFirestoreQuotaExceeded, setFirestoreQuotaExhausted, isQuotaExceededError } from "../firebase";
+import { db, isFirestoreQuotaExceeded, setFirestoreQuotaExhausted, isQuotaExceededError } from "../lib/backend";
 import {
   collection,
   collectionGroup,
@@ -15,7 +15,7 @@ import {
   deleteDoc,
   arrayUnion,
   where
-} from "firebase/firestore";
+} from "../lib/supabaseDb";
 import { UserProfile, PaymentRequest } from "../types";
 import { motion, AnimatePresence } from "motion/react";
 import {

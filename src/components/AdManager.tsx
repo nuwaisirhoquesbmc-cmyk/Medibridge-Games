@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useMemo } from "react";
-import { db, handleFirestoreError, OperationType } from "../firebase";
+import { db, handleFirestoreError, OperationType } from "../lib/backend";
 import {
   collection,
   onSnapshot,
@@ -11,7 +11,7 @@ import {
   limit,
   serverTimestamp,
   updateDoc,
-} from "firebase/firestore";
+} from "../lib/supabaseDb";
 import { Advertisement, AdAnalyticsEvent } from "../types";
 import { playSound } from "../audio";
 import {

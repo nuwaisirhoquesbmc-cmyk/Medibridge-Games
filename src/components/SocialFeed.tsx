@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { db, handleFirestoreError, OperationType } from "../firebase";
+import { db, handleFirestoreError, OperationType } from "../lib/backend";
 import {
   collection,
   onSnapshot,
@@ -11,7 +11,7 @@ import {
   orderBy,
   limit,
   serverTimestamp,
-} from "firebase/firestore";
+} from "../lib/supabaseDb";
 import { FeedPost, StudySquad, UserProfile, Question } from "../types";
 import SquadChat from "./SquadChat";
 import {

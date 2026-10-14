@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import { db, handleFirestoreError, OperationType } from "../firebase";
+import { db, handleFirestoreError, OperationType } from "../lib/backend";
 import {
   collection,
   addDoc,
@@ -10,7 +10,7 @@ import {
   limit,
   onSnapshot,
   serverTimestamp,
-} from "firebase/firestore";
+} from "../lib/supabaseDb";
 import { SquadMessage, UserProfile } from "../types";
 import {
   Send,

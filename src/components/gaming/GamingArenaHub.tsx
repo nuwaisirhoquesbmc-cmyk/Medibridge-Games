@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { db } from "../../firebase";
-import { doc, getDoc, getDocs, collection, query, limit } from "firebase/firestore";
+import { db } from "../../lib/backend";
+import { doc, getDoc, getDocs, collection, query, limit } from "../../lib/supabaseDb";
 import { Question, UserProfile } from "../../types";
 import {
   MEDICAL_GAMES,

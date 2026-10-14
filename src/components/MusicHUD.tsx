@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
-import { db } from "../firebase";
-import { doc, getDoc } from "firebase/firestore";
+import { db } from "../lib/backend";
+import { doc, getDoc } from "../lib/supabaseDb";
 import { getMusicFromIndexedDB } from "../lib/musicDb";
 import { Music, Volume2, VolumeX, Play, Pause, Disc, ListMusic, Sparkles, Gamepad2 } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";

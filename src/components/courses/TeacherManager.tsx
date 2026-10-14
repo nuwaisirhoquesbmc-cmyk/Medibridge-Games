@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { Course, CourseTeacher } from "../../types/courseTypes";
 import { UserProfile } from "../../types";
-import { db } from "../../firebase";
+import { db } from "../../lib/backend";
 import {
   collection,
   addDoc,
@@ -12,7 +12,7 @@ import {
   query,
   orderBy,
   setDoc
-} from "firebase/firestore";
+} from "../../lib/supabaseDb";
 import { motion, AnimatePresence } from "motion/react";
 import {
   Users,

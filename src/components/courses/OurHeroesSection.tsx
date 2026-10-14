@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import { db } from "../../firebase";
-import { collection, getDocs, query, orderBy, limit } from "firebase/firestore";
+import { db } from "../../lib/backend";
+import { collection, getDocs, query, orderBy, limit } from "../../lib/supabaseDb";
 import { OurHero, INITIAL_HEROES } from "../../types/heroTypes";
 import {
   Award,

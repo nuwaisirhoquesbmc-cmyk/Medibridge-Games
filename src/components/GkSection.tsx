@@ -27,7 +27,7 @@ import {
 } from "lucide-react";
 import { playSound } from "../audio";
 import { UserProfile, Question } from "../types";
-import { logQuestionMistake, removeQuestionMistake } from "../firebase";
+import { logQuestionMistake, removeQuestionMistake } from "../lib/backend";
 
 interface GkSectionProps {
   currentUser: UserProfile;

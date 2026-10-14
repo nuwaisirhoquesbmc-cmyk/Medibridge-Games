@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { motion, AnimatePresence } from "motion/react";
-import { db, isFirestoreQuotaExceeded, setFirestoreQuotaExhausted, isQuotaExceededError } from "../../firebase";
+import { db, isFirestoreQuotaExceeded, setFirestoreQuotaExhausted, isQuotaExceededError } from "../../lib/backend";
 import {
   collection,
   query,
@@ -10,7 +10,7 @@ import {
   doc,
   updateDoc,
   writeBatch
-} from "firebase/firestore";
+} from "../../lib/supabaseDb";
 import { playSound } from "../../audio";
 import { NotificationService } from "../../lib/notificationService";
 import AllNotificationsModal, { UserNotificationItem } from "./AllNotificationsModal";

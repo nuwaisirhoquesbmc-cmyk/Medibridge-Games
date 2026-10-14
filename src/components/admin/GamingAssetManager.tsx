@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
-import { db, handleFirestoreError, OperationType } from "../../firebase";
-import { doc, onSnapshot, setDoc, serverTimestamp } from "firebase/firestore";
+import { db, handleFirestoreError, OperationType } from "../../lib/backend";
+import { doc, onSnapshot, setDoc, serverTimestamp } from "../../lib/supabaseDb";
 import { MEDICAL_GAMES, GameMetadata } from "../gaming/gamingData";
 import {
   Gamepad2,

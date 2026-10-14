@@ -19,8 +19,8 @@ import {
 } from "lucide-react";
 import { playSound } from "../audio";
 import { UserProfile, PremiumConfig } from "../types";
-import { db } from "../firebase";
-import { collection, addDoc, doc, getDoc } from "firebase/firestore";
+import { db } from "../lib/backend";
+import { collection, addDoc, doc, getDoc } from "../lib/supabaseDb";
 
 const ICON_MAP: Record<string, React.ComponentType<any>> = {
   Trophy,

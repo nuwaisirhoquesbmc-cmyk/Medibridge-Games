@@ -1,4 +1,4 @@
-import { db } from "../firebase";
+import { db } from "./backend";
 import {
   collection,
   doc,
@@ -11,7 +11,7 @@ import {
   limit,
   serverTimestamp,
   writeBatch
-} from "firebase/firestore";
+} from "./supabaseDb";
 import { BankQuestion, ExamUsageReference, QuestionBankStats } from "../types/questionBankTypes";
 import { Question } from "../types";
 import { CourseExam } from "../types/courseTypes";

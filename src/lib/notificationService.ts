@@ -1,4 +1,4 @@
-import { db } from "../firebase";
+import { db } from "./backend";
 import { playSound } from "../audio";
 import {
   collection,
@@ -13,7 +13,7 @@ import {
   limit,
   updateDoc,
   Timestamp
-} from "firebase/firestore";
+} from "./supabaseDb";
 import {
   NotificationType,
   NotificationPriority,

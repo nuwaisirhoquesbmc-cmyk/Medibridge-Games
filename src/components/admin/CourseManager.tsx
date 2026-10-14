@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { db } from "../../firebase";
+import { db } from "../../lib/backend";
 import {
   collection,
   doc,
@@ -12,7 +12,7 @@ import {
   addDoc,
   query,
   limit
-} from "firebase/firestore";
+} from "../../lib/supabaseDb";
 import { Course, CourseTeacher, CourseRoutineItem } from "../../types/courseTypes";
 import { INITIAL_COURSES } from "../../data/coursesData";
 import { playSound } from "../../audio";

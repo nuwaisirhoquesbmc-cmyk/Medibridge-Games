@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { db, auth, handleFirestoreError, OperationType, isFirestoreQuotaExceeded, setFirestoreQuotaExhausted, isQuotaExceededError } from "./firebase";
+import { db, handleFirestoreError, OperationType, isFirestoreQuotaExceeded, setFirestoreQuotaExhausted, isQuotaExceededError } from "./lib/backend";
 import { supabase } from "./lib/supabase";
 import { fetchSupabaseProfile, mapSupabaseToUserProfile } from "./lib/authProfile";
 import { 
@@ -27,7 +27,7 @@ import {
   getMigratedNotices, 
   getMigratedSetting 
 } from "./lib/migratedDataStore";
-import { doc, getDoc, getDocs, onSnapshot, collection, query, orderBy, limit, setDoc, serverTimestamp, where, updateDoc, deleteDoc } from "firebase/firestore";
+import { doc, getDoc, getDocs, onSnapshot, collection, query, orderBy, limit, setDoc, serverTimestamp, where, updateDoc, deleteDoc } from "./lib/supabaseDb";
 import { UserProfile, Question, AdminNotice, CHARACTERS } from "./types";
 
 // Recursively strips undefined values so Firestore never throws unsupported field value error
@@ -1400,10 +1400,7 @@ export default function App() {
       } catch (e) {}
       setIsSuperadminVerified(false);
 
-      await Promise.allSettled([
-        supabase.auth.signOut(),
-        auth.signOut()
-      ]);
+      await supabase.auth.signOut().catch(() => {});
       setUser(null);
       setActiveTab("dashboard");
       setMobileMenuOpen(false);
@@ -2552,7 +2549,7 @@ export default function App() {
                   <div className="flex flex-col gap-2.5">
                     <p className="text-[10px] text-slate-500 dark:text-gray-400 leading-normal">
                       {language === "bn"
-                        ? "মেডিকেল ভর্তি পরীক্ষার প্রস্তুতি শতভাগ মজবুত করতে আমাদের স্পেশাল এক্সাম ব্যাচ ও কোর্সে ভর্তি হন।"
+                        ? "মেডিকেল ভর্তি পরীক্ষার প্রস্তুতি শতভাগ মজবুত করতে আমাদের স্পেশাল এক্সাম ব���যাচ ও কোর্সে ভর্তি হন।"
                         : "Enroll in high-yield medical admission exam batches and model test programs."}
                     </p>
                     <button

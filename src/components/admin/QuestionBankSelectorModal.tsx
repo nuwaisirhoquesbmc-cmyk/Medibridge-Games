@@ -1,7 +1,7 @@
 import React, { useState, useEffect, useMemo } from "react";
 import { BankQuestion, QuestionSubject } from "../../types/questionBankTypes";
-import { db, isFirestoreQuotaExceeded, setFirestoreQuotaExhausted, isQuotaExceededError } from "../../firebase";
-import { collection, getDocs, query, limit, where } from "firebase/firestore";
+import { db, isFirestoreQuotaExceeded, setFirestoreQuotaExhausted, isQuotaExceededError } from "../../lib/backend";
+import { collection, getDocs, query, limit, where } from "../../lib/supabaseDb";
 import { normalizeToBankQuestion, saveQuestionToFirestoreBank } from "../../lib/questionBankService";
 import { motion, AnimatePresence } from "motion/react";
 import {

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { Course, Batch, Coupon, Order, Enrollment, CoursePaymentSettings } from "../../types/courseTypes";
 import { UserProfile } from "../../types";
-import { db } from "../../firebase";
-import { collection, addDoc, doc, setDoc, updateDoc, increment, arrayUnion, getDocs, query, where, onSnapshot } from "firebase/firestore";
+import { db } from "../../lib/backend";
+import { collection, addDoc, doc, setDoc, updateDoc, increment, arrayUnion, getDocs, query, where, onSnapshot } from "../../lib/supabaseDb";
 import { DEFAULT_PAYMENT_SETTINGS } from "../../data/coursesData";
 import { motion } from "motion/react";
 import PaymentReceipt from "./PaymentReceipt";

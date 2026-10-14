@@ -1,5 +1,5 @@
-import { db } from "../firebase";
-import { doc, getDoc, setDoc, addDoc, collection, serverTimestamp, onSnapshot, query, limit } from "firebase/firestore";
+import { db } from "./backend";
+import { doc, getDoc, setDoc, addDoc, collection, serverTimestamp, onSnapshot, query, limit } from "./supabaseDb";
 import { LiveExamSecuritySettings, ExamViolationRecord } from "../types/courseTypes";
 
 export const DEFAULT_SECURITY_SETTINGS: LiveExamSecuritySettings = {

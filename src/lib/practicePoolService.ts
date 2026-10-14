@@ -1,8 +1,8 @@
 import { Question, SubjectType, PracticeExamConfig, PracticeAttemptRecord, PracticeMode } from "../types";
 import { STARTER_QUESTIONS } from "../questionsData";
 import { MistakeBankItem, CourseExam } from "../types/courseTypes";
-import { db } from "../firebase";
-import { collection, addDoc, serverTimestamp } from "firebase/firestore";
+import { db } from "./backend";
+import { collection, addDoc, serverTimestamp } from "./supabaseDb";
 
 export interface ChapterTopicMap {
   [subject: string]: {

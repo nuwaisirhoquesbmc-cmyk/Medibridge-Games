@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { db, handleFirestoreError, OperationType, isFirestoreQuotaExceeded, setFirestoreQuotaExhausted, isQuotaExceededError } from "../../firebase";
+import { db, handleFirestoreError, OperationType, isFirestoreQuotaExceeded, setFirestoreQuotaExhausted, isQuotaExceededError } from "../../lib/backend";
 import {
   collection,
   query,
@@ -11,7 +11,7 @@ import {
   doc,
   serverTimestamp,
   limit,
-} from "firebase/firestore";
+} from "../../lib/supabaseDb";
 import { Coupon, CouponUsageLog, Course } from "../../types/courseTypes";
 import { INITIAL_COURSES, INITIAL_COUPONS } from "../../data/coursesData";
 import {
